@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- começo do meu code html -->
+
+<head> <!-- inicio do meu head -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title> Controle - Orçamentos </title>
+</head> <!-- fim do meu head -->
+
+<body> <!-- começo do meu body -->
+    
+    <div class="container"> <!-- inicio da minha div principal -->
+        <h2>Controle de despesas</h2>
+        <h4>Saldo atual</h4>
+
+        <h1 id="balance" class="balance">R$ 0.00</h1>
+
+        <div class="inc-exp-container"> <!-- inicio da minha div exp -->
+            <div>
+                <h4>Receitas</h4>
+                <p id="money-plus" class="money plus">+ R$0.00</p>
+            </div>
+
+            <div>
+                <h4>Despesas</h4>
+                <p id="money-minus" class="money minus">- R$0.00</p>
+            </div>
+        </div> <!-- fim da minha div exp -->
+
+        <h3>Transações</h3>
+
+        <ul id="transactions" class="transactions"></ul>
+
+        <h3>Adicionar transação</h3>
+
+        <form id="form"> <!-- inicio do form -->
+            <div class="form-control">
+                <label for="text">Nome</label>
+                <input autofocus type="text" id="text" placeholder="Nome da transação" />
+            </div>
+
+            <div class="form-control">
+                <label for="amount">Valor <br />
+                    <small>(negativo - despesas, positivo - receitas)</small>
+                </label>
+                <input type="number" id="amount" placeholder="Valor da transação" />
+            </div>
+
+            <button class="btn">Adicionar</button>
+        </form> <!-- fim do form -->
+    </div> <!-- fim da minha div principal -->
+
+    <script src="./js/script.js"></script>
+</body> <!-- fim do meu body -->
+
+</html> <!-- fim do meu code html -->
